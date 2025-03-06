@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+@layer components {
+  .text-parrafo {
+    @apply text-lg font-light w-full text-left pl-4 pt-2;
+  }
+
+  .section-title {
+    @apply flex text-2xl font-medium;
+  }
+
+  .btn-rounded-primary{
+    @apply rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5;
+  }
+
+  .btn-rounded-secondary{
+    @apply rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44;
+  }
+
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -24,3 +43,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
