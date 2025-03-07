@@ -1,11 +1,40 @@
+import Image from "next/image";
+import projectsJson from '@/projects.json'
+import { useEffect } from "react";
+
 export default function ProjectsSection(){
+    useEffect(()=>{
+    }, [])
+    
     return (
-        <section id="work-experience-info" className="flex flex-col items-start w-12/12 border-t-2 p-4">
-            <span className="section-title">Proyectos</span>
-            <p className="text-xl">My Band App</p>
-            <p className="text-parrafo">
-              Es el proyecto que realicé para el final de la carrera de Analista de sistemas. Combina mi pasión por la producción musical y por el desarrollo de experiencias interactivas.
-            </p>
+        <section id="work-experience-info" className="project-section">
+            <span className="section-title mb-4">Proyectos</span>
+            <div className="flex flex-row flex-wrap">
+            {
+                projectsJson.projects.map((project, index) => (
+                    <a
+                    key={index}
+                    className="project-card"
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <div className="flex flex-col">
+                        <span className="text-xl font-semibold flex">{project.title}</span>
+                        <p className="text-detail flex">{project.description}</p>
+                        <Image 
+                        className="mb-2 flex"
+                        src={project.preview}
+                        alt={`Imagen de proyecto ${project.title}`}
+                        width={939}
+                        height={779}
+                        priority
+                        />
+                    </div>
+                </a>
+                ) )
+            }
+            </div>
         </section>
     )
 }

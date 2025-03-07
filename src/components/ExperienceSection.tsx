@@ -1,8 +1,6 @@
-import PrimaryButton from "./Buttons";
-
 export default function ExperienceSection(){
     return (
-        <section id="work-experience-info" className="flex flex-col items-start w-12/12 border-t-2 p-4">
+        <section id="work-experience-info" className="flex flex-col rounded-md items-start w-12/12 border-t-2 p-4 hover:shadow-lg shadow-blue-900 transition-transform duration-300 hover:-translate-y-2">
             <span className="section-title">Experiencia laboral</span>
             <p className="text-xl">Lider técnico en KNH S.R.L. <span className="text-sm">- (Junio 2021 - Actualidad)</span></p>
             <p className="text-lg font-light w-full mt-4 text-left pl-4">

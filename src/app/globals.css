@@ -5,8 +5,20 @@
     @apply text-lg font-light w-full text-left pl-4 pt-2;
   }
 
+  .section-card {
+    @apply flex flex-col rounded-md items-start w-12/12 border-t-2 p-4 hover:shadow-lg shadow-blue-900 transition-transform duration-300 hover:-translate-y-2;
+  }
+
   .section-title {
     @apply flex text-2xl font-medium;
+  }
+
+  .project-section {
+    @apply flex flex-col rounded-md items-start w-12/12 border-t-2 p-4
+  }
+
+  .project-card {
+    @apply flex flex-col rounded-md items-start border-t-2 p-4 hover:shadow-lg shadow-blue-900 transition-transform duration-300 w-6/12 border-2 hover:-translate-y-2;
   }
 
   .btn-rounded-primary{
@@ -16,6 +28,7 @@
   .btn-rounded-secondary{
     @apply rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44;
   }
+
 
 }
 
