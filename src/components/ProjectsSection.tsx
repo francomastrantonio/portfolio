@@ -9,7 +9,7 @@ export default function ProjectsSection(){
     return (
         <section id="work-experience-info" className="project-section">
             <span className="section-title mb-4">Proyectos</span>
-            <div className="flex flex-row flex-wrap">
+            <div className="flex flex-row flex-wrap gap-2">
             {
                 projectsJson.projects.map((project, index) => (
                     <a

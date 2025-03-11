@@ -8,6 +8,7 @@ export const useScroll = (offset: number = 20) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > offset);
     };
+    handleScroll()
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [offset]);
