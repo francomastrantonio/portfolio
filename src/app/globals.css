@@ -6,7 +6,7 @@
   }
 
   .section-card {
-    @apply flex flex-col rounded-md items-start w-12/12 border-t-2 p-4 hover:shadow-lg shadow-blue-900 transition-transform duration-300 hover:-translate-y-2;
+    @apply flex flex-col rounded-md items-start w-12/12 border-t-2 p-4 hover:shadow-lg shadow-blue-900 transition-transform duration-300 hover:-translate-y-2 sm:w-full;
   }
 
   .section-title {
@@ -14,22 +14,28 @@
   }
 
   .project-section {
-    @apply flex flex-col rounded-md items-start w-12/12 border-t-2 p-4;
+    @apply flex flex-col rounded-md items-start w-12/12 border-t-2 p-4 sm:w-full;
   }
 
   .project-card {
-    @apply flex flex-col rounded-md items-start border-t-2 p-4 hover:shadow-lg shadow-blue-900 transition-transform duration-300 min-w-[400px] w-12/12 border-2 sm:w-4/12 hover:-translate-y-2;
+    @apply flex flex-col rounded-md items-start border-t-2 p-4 hover:shadow-lg shadow-blue-900 transition-transform duration-300 min-w-[300px] w-12/12 border-2 sm:w-4/12 hover:-translate-y-2;
   }
 
   .btn-rounded-primary{
-    @apply rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5;
+    @apply rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-white text-background gap-2 text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 hover:text-blue-900;
+  }
+
+  .btn-rounded-primary:hover{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.30) !important;
   }
 
   .btn-rounded-secondary{
-    @apply rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44;
+    @apply rounded-full border border-solid border-white/[.145] transition-colors flex items-center justify-center hover:shadow-[inset_0_0_10px_rgba(255,255,255,0.2)] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44;
   }
 
-
+  .header-container {
+    @apply fixed flex top-0 left-0 p-4 w-full transition-all duration-300 justify-between items-center z-50 sm:w-full;
+  }
 }
 
 :root {
@@ -56,4 +62,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-

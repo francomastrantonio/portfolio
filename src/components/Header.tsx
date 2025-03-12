@@ -5,8 +5,19 @@ import Image from "next/image";
 export default function Header(){
     const isScrolled = useScroll(20)
 
+    const calculateAge = () => {
+      const today = new Date();
+      const birth = new Date('07/07/1993')
+      let age = today.getFullYear() - birth.getFullYear();
+      const monthDiff = today.getMonth() - birth.getMonth();
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+          age--;
+      } 
+      return age;
+    }
+
     return (
-        <div className={`fixed flex top-0 left-0 p-4 w-full transition-all duration-300 justify-between items-center z-50 ${
+        <div className={`header-container ${
           isScrolled ? "bg-background shadow-md flex-row" : "bg-transparent flex-col"
         }`}>
             <Image
@@ -20,7 +31,7 @@ export default function Header(){
               priority
             />
             <span className="flex text-3xl font-medium transition-all duration-300">Franco Mastrantonio</span>
-          
+            { !isScrolled && <span>{calculateAge()} años</span> }
         </div>
     )
 }

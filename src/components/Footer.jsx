@@ -34,6 +34,22 @@ export default function Footer(){
           />
           Github
         </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="mailto:francomastrantonio@hotmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            className="invert-[0.5] brightness-0"
+            src="/mail-icon.svg"
+            alt="Email icon"
+            width={18}
+            height={18}
+          />
+          francomastrantonio@hotmail.com
+        </a>
       </footer>   
     )
 }

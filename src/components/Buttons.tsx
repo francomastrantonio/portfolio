@@ -1,10 +1,21 @@
-export default function PrimaryButton(url: string, value: string){
+export const PrimaryButton = (props: any) => {
     return (
         <a
         className="btn-rounded-primary"
-        href={url}
+        href={props.url}
         target="_blank"
         rel="noopener noreferrer"
-      >{value}</a>
+      >{props.children}</a>
     )
+}
+
+export const SecondaryButton = (props: any) => {
+  return (
+        <a
+          className="btn-rounded-secondary"
+          href={props.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >{props.children}</a>
+  )
 }

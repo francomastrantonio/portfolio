@@ -1,6 +1,8 @@
+import {PrimaryButton, SecondaryButton} from "./Buttons";
+
 export default function ExperienceSection(){
     return (
-        <section id="work-experience-info" className="flex flex-col rounded-md items-start w-12/12 border-t-2 p-4 hover:shadow-lg shadow-blue-900 transition-transform duration-300 hover:-translate-y-2">
+        <section id="work-experience-info" className="flex flex-col rounded-md items-start w-12/12 border-t-2 p-4 hover:shadow-lg shadow-blue-900 transition-transform duration-300 hover:-translate-y-2 sm:w-full">
             <span className="section-title">Experiencia laboral</span>
             <p className="text-xl">Lider técnico en KNH S.R.L. <span className="text-sm">- (Junio 2021 - Actualidad)</span></p>
             <p className="text-lg font-light w-full mt-4 text-left pl-4">
@@ -18,19 +20,13 @@ export default function ExperienceSection(){
             <p className="text-parrafo">
               Velar por el uso de buenas practicas y documentación al día.
             </p>
-            <div className="flex flex-row self-center pt-4">
-              <a
-                className="mr-2 btn-rounded-primary"
-                href="https://play.google.com/store/apps/details?id=ar.com.maspagos&hl=es_419"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Ir a Google Play</a>
-              <a
-              className="btn-rounded-secondary"
-              href="https://micomercio.maspagos.com.ar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ir a la web</a>
+            <div className="flex flex-row self-center pt-4 gap-2">
+              <PrimaryButton url={"https://play.google.com/store/apps/details?id=ar.com.maspagos&hl=es_419"}>
+                Ir a Google Play
+              </PrimaryButton>
+              <SecondaryButton url={"https://micomercio.maspagos.com.ar/"}>
+                Ir a la web
+              </SecondaryButton>
           </div>
         </section>
     )
