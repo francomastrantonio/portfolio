@@ -11,7 +11,7 @@ export default function Footer(){
           <Image
             aria-hidden
             className="invert-[0.5] brightness-0"
-            src="/brand-linkedin.svg"
+            src="/icons/brand-linkedin.svg"
             alt="Linkedin icon"
             width={16}
             height={16}
@@ -27,12 +27,27 @@ export default function Footer(){
           <Image
             aria-hidden
             className="invert-[0.5] brightness-0"
-            src="/brand-github.svg"
+            src="/icons/brand-github.svg"
             alt="Github icon"
             width={16}
             height={16}
           />
           Github
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="/docs/franco_mastrantonio_cv.pdf"
+          download="Franco Mastrantonio - CV"
+        >
+          <Image
+            aria-hidden
+            className="invert-[0.5] brightness-0"
+            src="/icons/file.svg"
+            alt="Email icon"
+            width={16}
+            height={16}
+          />
+          Descargar CV
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -43,7 +58,7 @@ export default function Footer(){
           <Image
             aria-hidden
             className="invert-[0.5] brightness-0"
-            src="/mail-icon.svg"
+            src="/icons/mail-icon.svg"
             alt="Email icon"
             width={18}
             height={18}
