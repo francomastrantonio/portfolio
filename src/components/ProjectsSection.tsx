@@ -23,12 +23,12 @@ export default function ProjectsSection(){
                         <span className="text-xl font-semibold flex">{project.title}</span>
                         <p className="text-detail flex">{project.description}</p>
                         <Image 
-                        className="mb-2 flex"
-                        src={project.preview}
-                        alt={`Imagen de proyecto ${project.title}`}
-                        width={939}
-                        height={779}
-                        priority
+                            className="mb-2 flex"
+                            src={`/images${project.preview}`}
+                            alt={`Imagen de proyecto ${project.title}`}
+                            width={939}
+                            height={779}
+                            priority
                         />
                     </div>
                 </a>

@@ -24,7 +24,7 @@ export default function Header(){
               className={`flex rounded-full max-w-[446] border-solid border-white border-2 transition-all duration-300 ${
                 isScrolled ? "w-[70px]" : "w-[300px] mb-4"
               }`}
-              src="/avatar.png"
+              src="/images/avatar.png"
               alt="Foto de Franco"
               width={446}
               height={427}
