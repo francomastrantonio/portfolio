@@ -7,7 +7,7 @@ export default function ProfileSection(){
               Tengo experiencia en la construcción de interfaces intuitivas y responsivas. 
               Me encanta enfrentar desafíos técnicos, escribir código limpio y mantenerme actualizado con las últimas tendencias de desarrollo.
               <br></br>Siempre estoy buscando mejorar mis habilidades y trabajar en proyectos que me permitan innovar y aprender. 🚀
-              <p className="text-xl mt-4">Graduado de Analista de sistemas<span className="text-sm"> - <a
+              <p className="text-xl mt-4">🎓 Graduado de Analista de sistemas<span className="text-sm"> - <a
                       className="items-center gap-2 hover:underline hover:underline-offset-4"
                       href="https://davinci.edu.ar/"
                       target="_blank"
