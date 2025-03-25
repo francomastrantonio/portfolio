@@ -21,7 +21,7 @@ export default function ProjectsSection(){
                 >
                     <div className="flex flex-col">
                         <span className="text-xl font-semibold flex">{project.title}</span>
-                        <p className="text-detail flex">{project.description}</p>
+                        <p className="text-parrafo pl-0 mb-2 flex">{project.description}</p>
                         <Image 
                             className="mb-2 flex"
                             src={`/images${project.preview}`}

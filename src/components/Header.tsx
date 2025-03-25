@@ -1,6 +1,5 @@
 'use client'
 import { useScroll } from "@/hooks/useScroll";
-//import Image from "next/image";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useEffect } from "react";
 
@@ -28,7 +27,7 @@ export default function Header(){
 
     return (
         <div className={`header-container ${
-          isScrolled ? "bg-background shadow-md flex-row" : "bg-transparent flex-col"
+          isScrolled ? "bg-[#15192c] shadow-md flex-row" : "bg-transparent flex-col"
         }`}>
            <motion.div className={`absolute left-10 rounded-xl top-11 h-3 ${
             scrollProgressValue.get() < 0.035 ? 'bg-transparent' :  'bg-white duration-0'

@@ -2,7 +2,7 @@
 
 @layer components {
   .text-parrafo {
-    @apply text-lg font-light w-full text-left pl-4 pt-2;
+    @apply text-sm font-light w-full text-left pl-4 pt-2;
   }
 
   .section-card {

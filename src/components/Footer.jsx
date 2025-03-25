@@ -1,8 +1,8 @@
 import Image from "next/image";
 export default function Footer(){
     return (
-        <footer className="row-start-4 items-center justify-center h-[150px] sm:h-auto">
-          <div className="flex flex-col sm:flex-row border-t-2 pt-4 gap-3">
+        <footer className="row-start-4 items-center justify-center h-[150px] w-full sm:h-auto max-w-[800px]">
+          <div className="flex flex-col justify-center sm:flex-row border-t-2 pt-4 gap-3">
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               href="https://www.linkedin.com/in/franco-mastrantonio-33ab41185/"
