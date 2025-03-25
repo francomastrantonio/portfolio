@@ -6,7 +6,7 @@ import Footer from "@/components/Footer"
 import { useScroll } from "@/hooks/useScroll";
 import ProfileSection from "@/components/ProfileSection";
 import { useMotionValue } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
   const { scrollProgress } = useScroll(10)
