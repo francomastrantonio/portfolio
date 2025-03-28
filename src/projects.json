@@ -4,13 +4,25 @@
             "title": "MyBandApp",
             "description": "Es un proyecto que combina mi pasión por la producción musical y por el desarrollo de experiencias interactivas. Es una herramienta para iniciantes en el mundo de la producción musical o musicos que necesitan un soporte en su performance.",
             "preview": "/mybandapp-preview.png",
-            "url": "https://mybandapp-frontend.onrender.com/"
+            "url": "https://mybandapp-frontend.onrender.com/",
+            "stack": [
+                {"id": "css", "description": "CSS"}, 
+                {"id": "html", "description": "HTML"},
+                {"id": "mongodb", "description": "Mongo DB"},
+                {"id": "nodejs", "description": "Node JS"}, 
+                {"id": "react", "description": "React JS"}
+            ]
         },
         {
             "title": "Drum Machine",
             "description": "Web para crear loops de percusión sencilla. La realice aprendiendo javascript en el 2020.",
             "preview": "/drumMachine-preview.png",
-            "url": "https://francomastrantonio.github.io/"
+            "url": "https://francomastrantonio.github.io/",
+            "stack": [
+                {"id": "css", "description": "CSS"}, 
+                {"id": "html", "description": "HTML"},
+                {"id": "javascript", "description": "Javascript"}
+            ]
         }
     ]
 }
