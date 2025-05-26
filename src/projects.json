@@ -15,13 +15,15 @@
         },
         {
             "title": "Drum Machine",
-            "description": "Web para crear loops de percusión sencilla. La realice aprendiendo javascript en el 2020.",
+            "description": "Web para crear loops. La idea nace al estar aprendiendo javascript en mis estudios que luego actualicé el codigo implementando la idea con Next Js",
             "preview": "/drumMachine-preview.png",
-            "url": "https://francomastrantonio.github.io/",
+            "url": "https://drum-sequencerv2-8qjpshy09-frankies-projects-b6f84dc3.vercel.app/",
             "stack": [
                 {"id": "css", "description": "CSS"}, 
                 {"id": "html", "description": "HTML"},
-                {"id": "javascript", "description": "Javascript"}
+                {"id": "nodejs", "description": "Node JS"}, 
+                {"id": "react", "description": "React JS"},
+                {"id": "next-js", "description": "Next JS"}
             ]
         }
     ]

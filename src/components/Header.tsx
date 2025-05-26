@@ -9,7 +9,6 @@ export default function Header(){
   
   useEffect(()=>{
     scrollProgressValue.set(scrollProgress)
-    console.log('scrollProgressValue.get()=',scrollProgressValue.get())
   }, [scrollProgress, scrollProgressValue])
   
   const x = useTransform(scrollProgressValue, [0, 1], ["0%", "30vw"])
